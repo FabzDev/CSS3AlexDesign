@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	height: 2000px;
+}
+
+.background {
+	width: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	padding: 0.1px;
+}
+
+.text {
+	text-align: center;
+	margin: 50px auto;
+}
+
+.text p {
+	margin-top: 15px;
+}
+
+.section1 {
+	background-image: url(./img/hero.jpg);
+	height: 100vh;
+	padding: 0.1px;
+}
+
+.section1 h2 {
+	display: block;
+	width: fit-content;
+	color: white;
+	text-align: center;
+	background-color: black;
+	margin: 0 auto;
+	padding: 20px 30px;
+	font-size: 18px;
+	margin-top: calc(50vh - 22px);
+}
+
+.section2 {
+	background-image: url(./img/fondo1.png);
+	height: 40vh;
+}
+
+.section2 h3,
+.section3 h3 {
+	color: white;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 400;
+	margin-top: 18vh;
+}
+
+.section3 {
+	background-image: url(./img/fondo2.png);
+	height: 20vh;
+}
+
+.section3 h3 {
+	margin-top: 8vh;
+}
