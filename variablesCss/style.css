@@ -69,10 +69,15 @@ main {
 @media screen and (max-width: 480px) {
 	main {
 		min-width: 280px;
-		height: 100vh;
 	}
 
 	.formato {
 		max-width: 90%;
+	}
+}
+
+@media screen and (max-height: 538px) {
+	main {
+		height: 100%;
 	}
 }
