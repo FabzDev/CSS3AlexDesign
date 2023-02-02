@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--linear-color-bg: linear-gradient(to right, #335dd151 0%, #9322d950 100%);
+
+	--linear-color-btn: linear-gradient(to right, #335dd1ea 0%, #9322d9e5 100%);
+
+	--shadow-box: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+main {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: var(--linear-color-bg), url(./bg.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	padding: 0.1px;
+}
+
+.formato {
+	width: 350px;
+	margin: 50px auto;
+	padding: 20px 30px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: var(--shadow-box);
+}
+
+.formato__contactanos {
+	font-size: 1.6rem;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.formato__input-texto,
+.formato__input-button,
+.formato__mensaje {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 15px 5px;
+	font-family: inherit;
+	resize: none;
+	outline: none;
+}
+
+.formato__input-texto {
+	font-size: 1rem;
+}
+
+.formato__input-texto::placeholder {
+	font-size: 0.8rem;
+}
+
+.formato__input-button {
+	width: 100%;
+	font-size: 1rem;
+	font-weight: bold;
+	color: white;
+	background: var(--linear-color-btn);
+	border: none;
+	cursor: pointer;
+}
