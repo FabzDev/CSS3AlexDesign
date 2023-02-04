@@ -88,24 +88,43 @@ body{
 }
 
 @media screen and (max-width: 900px){
-    html{
-        font-size: 12px;
-    }
-
-    .container{
-        width: 80%;
+    
+    :root{
+        --height-nav:100px;
     }
     
     .nav__container{
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .hero__main{
         flex-direction: column;
+        padding: 40px
+    }
+
+    .hero__texts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .hero__title{
+        font-size: 2.5rem;
+    }
+
+    .hero__paragraph{
+        font-size: 1rem;
+
     }
 
     .hero__picture{
         order: -1;
     }
+
+    .hero__img{
+        max-width: 380px;
+    }
+
 }
