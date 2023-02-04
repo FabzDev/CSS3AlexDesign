@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--padding: 4em;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+.cards {
+	display: flex;
+	background-color: aliceblue;
+	padding: var(--padding);
+	gap: 2em;
+	/* align-items: center; */
+}
+
+.card {
+	background-color: white;
+
+	border: 1px black;
+	height: calc(100vh - var(--padding) * 2);
+	display: flex;
+	flex-direction: column;
+	padding: 2em;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card__figure,
+.card__title,
+.card__text,
+.cta-container {
+	overflow: hidden;
+}
+
+.card__title {
+	font-size: 1.8em;
+}
+
+.card__text {
+	font-size: 0.9em;
+}
+
+.card__figure {
+	flex: 0.5;
+}
+
+.card__title,
+.cta-container {
+	flex: 0.1;
+	display: flex;
+	align-items: center;
+}
+
+.card__text {
+	flex: 0.3;
+}
+
+.cta {
+	background-color: #6c63ff;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 400;
+	border-radius: 0.2rem;
+	padding: 0.5em 1em;
+}
+
+.card__img {
+	/* width: 100px; */
+	width: 100%;
+	height: 100%;
+}
