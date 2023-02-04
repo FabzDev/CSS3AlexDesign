@@ -19,7 +19,7 @@ body{
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 0 200px;
+    padding: 0 10%;
 }
 
 .nav__titulo-nombre{
@@ -38,8 +38,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 200px;
+    padding: 0 10%;
     height: 90%;
+    min-width: 1064px;
+    min-height: 520px;
 }
 
 .main__container-text{

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --height: 70px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.nav{
+    height: var(--height);
+    background-color: rgb(13, 51, 78);
+    color: #fff;
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+
+.nav__link{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.hero__main{
+    display: flex;
+    height: calc(100vh - var(--height));
+    align-items: center;
+    min-height: 600px;
+}
+
+.hero__texts {
+    flex: 1;
+}
+
+.hero__title{
+    font-size: 3rem;    
+    margin-bottom:0.5em ;
+}
+
+.hero__paragraph{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom:0.5rem ;
+
+}
+
+.cta{
+    background-color: #6c63ff;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: .15rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.hero__picture {
+    flex: 1;
+}
+
+.hero__img {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+}
