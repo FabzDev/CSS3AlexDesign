@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
 * {
-	/* outline:3px solid red; */
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 :root {
@@ -15,4 +17,44 @@
 
 body {
 	font-family: "Lato", sans-serif;
+}
+
+.hero {
+	background: linear-gradient(to right, #ff4e50, #f9d423);
+	padding: 0.1px;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.hero__container {
+	width: 90%;
+	margin: 30px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero__figure,
+.hero__texts {
+	width: 40%;
+}
+
+.hero__text {
+	color: white;
+	font-size: 1.5rem;
+}
+
+.hero__text--title {
+	font-size: 4rem;
+	margin-bottom: 20px;
+}
+
+.hero__img {
+	width: 90%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
 }
