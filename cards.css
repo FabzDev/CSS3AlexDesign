@@ -3,12 +3,14 @@
 body {
 	font-family: "Roboto", sans-serif;
 	background-color: #f6f6f6;
+	overflow-x: hidden;
+	border: 1px solid blue;
 }
 
 .container {
-	border: 1px solid blue;
-
-	/* width: 100%; */
+	/* border: 1px solid blue; */
+	width: 100%;
+	min-width: 300px;
 	min-height: 100vh;
 }
 
