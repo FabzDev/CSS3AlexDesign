@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 	/* margin: 0; */
 	padding: 0;
-	/* outline: 1px solid red; */
+	outline: 1px solid red;
 }
 
 :root {
@@ -215,4 +215,28 @@ body {
 .languages__img {
 	width: 240px;
 	height: 100px;
+}
+
+/* Section Footer */
+
+.footer {
+	background: var(--color-primary);
+}
+
+.footer-main {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.contactanos {
+	width: 50%;
+}
+.footer__figure {
+	width: 50%;
+}
+
+.footer__img {
+	width: 80%;
+	height: 100%;
+	text-align: center;
 }
