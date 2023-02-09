@@ -228,15 +228,34 @@ body {
 	justify-content: space-evenly;
 }
 
-.contactanos {
-	width: 50%;
-}
 .footer__figure {
 	width: 50%;
+	text-align: center;
 }
 
 .footer__img {
 	width: 80%;
 	height: 100%;
+}
+
+.contactanos {
+	width: 50%;
+	color: white;
+}
+
+.contactanos__title {
+	color: white;
+}
+
+.contactanos__fabicons {
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 50px;
+}
+
+.fa-brands {
+	padding: 10px;
+	border: 1px solid white;
 	text-align: center;
+	border-radius: 2em;
 }
