@@ -365,18 +365,25 @@ body {
 	/* section Footer */
 
 	.footer__figure {
-		width: 100%;
+		width: 45%;
 		margin: 0 auto 30px;
 	}
 
 	.footer__img {
-		width: 70%;
+		width: 100%;
 	}
 
 	.contactanos {
 		width: 100%;
 	}
-	.contactanos__title {
-		font-size: 2.2rem;
+}
+
+@media screen and (max-width: 800px) {
+	.hero__figure {
+		width: 100%;
+	}
+
+	.hero__text--title {
+		font-size: 3rem;
 	}
 }
