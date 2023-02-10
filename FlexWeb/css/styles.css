@@ -204,7 +204,7 @@ body {
 	margin-bottom: 20px;
 	box-shadow: var(--box-shadow);
 	border-radius: 5px;
-	background-image: cover;
+	object-fit: cover;
 }
 
 .languages {
@@ -253,9 +253,9 @@ body {
 	font-size: 50px;
 }
 
-.fa-brands {
+/* .fa-brands {
 	padding: 10px;
 	border: 1px solid white;
 	text-align: center;
 	border-radius: 2em;
-}
+} */
