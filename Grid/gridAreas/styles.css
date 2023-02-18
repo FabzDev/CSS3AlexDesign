@@ -52,3 +52,26 @@ body {
 	background-color: chocolate;
 	grid-area: footer;
 }
+
+@media screen and (max-width: 800px) {
+	.grid {
+		grid-template-areas:
+			"header header header header header"
+			"main main main sidebar sidebar"
+			"main main main sidebar sidebar"
+			"main main main sidebar sidebar"
+			"footer footer footer footer footer";
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.grid {
+		grid-template-rows: repeat(4, 1fr);
+
+		grid-template-areas:
+			"header header header header header"
+			"main main main main main"
+			"sidebar sidebar sidebar sidebar sidebar"
+			"footer footer footer footer footer";
+	}
+}
