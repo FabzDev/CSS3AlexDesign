@@ -15,6 +15,8 @@ body {
 	margin: 30px auto;
 	outline: 3px solid #000;
 	display: grid;
+	grid-template-columns: [uno] 1fr [dos] 1fr [tres centro-col] 1fr [cuatro] 2fr [fin-cols];
+	grid-template-rows: [primera] 1fr [segunda] 1fr [tercera centro-row] 1fr [cuarta] 1fr [fin-rows];
 }
 
 .grid__item {
@@ -26,16 +28,24 @@ body {
 
 .grid :nth-child(1) {
 	background-color: slateblue;
+	grid-row: primera/fin-rows;
+	grid-column: dos/tres;
 }
 
 .grid :nth-child(2) {
 	background-color: crimson;
+	grid-column: centro-col/fin-cols;
+	/* grid-row: segunda/fin-rows; */
 }
 
 .grid :nth-child(3) {
 	background-color: coral;
+	grid-column: uno/cuatro;
+	grid-row: segunda/fin-rows;
 }
 
 .grid :nth-child(4) {
 	background-color: indigo;
+	grid-column: cuatro/fin-cols;
+	grid-row: segunda/fin-rows;
 }
