@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+* {
+	--grid-columns: repeat(8, 1fr);
+	--grid-rows: 1fr;
+	--clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+.contact {
+	display: grid;
+	grid-template-columns: var(--grid-columns);
+	grid-template-rows: var(var(--grid-rows));
+	min-height: 600px;
+	height: 100vh;
+}
+
+.contact__figure {
+	grid-column: 5/-1;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.contact__figure::before {
+	content: " ";
+	width: 100%;
+	height: 100%;
+	background: #5050f0;
+	position: absolute;
+	clip-path: polygon(35% 0%, 100% 0, 100% 100%, 0% 100%);
+	z-index: -1;
+}
+
+.contact__img {
+	width: 90%;
+}
+
+.contact__form {
+	grid-column: 1/5;
+	grid-row: 1;
+}
