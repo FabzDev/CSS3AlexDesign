@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 
 * {
+	--primary-color: #5050f0;
+	--font: "Inter", sans-serif;
 	--grid-columns: repeat(8, 1fr);
 	--grid-rows: 1fr;
 	--clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 
 body {
-	font-family: "Inter", sans-serif;
+	font-family: var(--font);
 }
 
 .contact {
@@ -26,10 +28,10 @@ body {
 }
 
 .contact__figure::before {
-	content: " ";
+	content: "";
 	width: 100%;
 	height: 100%;
-	background: #5050f0;
+	background: var(--primary-color);
 	position: absolute;
 	clip-path: polygon(35% 0%, 100% 0, 100% 100%, 0% 100%);
 	z-index: -1;
@@ -42,4 +44,47 @@ body {
 .contact__form {
 	grid-column: 1/5;
 	grid-row: 1;
+	width: 70%;
+	justify-self: center;
+	align-self: center;
+	display: grid;
+	gap: 30px;
+}
+
+.contact__title {
+	font-size: 3rem;
+}
+
+.contact__title::after {
+	display: block;
+	content: "";
+	width: 5rem;
+	height: 4px;
+	background-color: var(--primary-color);
+	margin-top: 10px;
+}
+
+.input {
+	font-family: var(--font);
+	padding: 18px 10px;
+	outline: none;
+	border: 1px solid #000;
+	border-radius: 2px;
+}
+
+.input--message {
+	resize: none;
+	height: 150px;
+}
+
+.contact__cta {
+	display: block;
+	width: 200px;
+	background-color: var(--primary-color);
+	color: #fff;
+	font-weight: 700;
+	border: none;
+	outline: none;
+	padding: 18px 0;
+	border-radius: 5px;
 }
