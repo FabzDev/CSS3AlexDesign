@@ -1,5 +1,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 
+* {
+	/* outline: 1px solid red; */
+}
+
 body {
 	font-family: "Inter", sans-serif;
+	background: linear-gradient(-70deg, #5050f0 45%, #fff 20%);
+}
+
+.main {
+	display: grid;
+	width: 90%;
+	margin: 0 auto;
+	height: 100vh;
+	grid-template-columns: 1fr 1.3fr;
+}
+
+.form-container,
+.svn-container {
+	display: grid;
+	grid-template-rows: 1fr 80% 1fr;
+}
+
+.form {
+	grid-row: 2;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.input {
+	display: block;
+	border: 1px solid #000;
+	margin-top: 30px;
+	outline: none;
+	padding: 15px 10px;
+	width: 100%;
+}
+
+.form__message {
+	height: 150px;
+	resize: none;
+}
+
+.form__cta {
+	margin-top: 30px;
+	width: 200px;
+	padding: 18px 0;
+	font-weight: 700;
+	color: #fff;
+	background-color: #5050f0;
+	border: none;
+	border-radius: 5px;
+}
+
+.form__title {
+	font-size: 3rem;
+}
+
+.form__title::after {
+	content: "asd";
+}
+
+.svn__figure {
+	grid-row: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.svn__img {
+	width: 90%;
 }
