@@ -7,10 +7,6 @@
 	--rows: repeat(8, 1fr);
 }
 
-* {
-	/* outline: 1px solid red; */
-}
-
 body {
 	font-family: var(--font);
 	height: 100vh;
@@ -30,7 +26,7 @@ body {
 
 .card::before {
 	content: "";
-	grid-column: 1/4;
+	grid-column: 1/-3;
 	grid-row: 1/-1;
 	background-image: url(./img.jpg);
 	background-position: top left;
@@ -42,7 +38,7 @@ body {
 }
 
 .card__content {
-	grid-column: 3/6;
+	grid-column: 3/-1;
 	grid-row: 2/-2;
 	background-color: var(--primary-color);
 	color: #fff;
@@ -63,4 +59,34 @@ body {
 	padding: 18px 45px;
 	/* width: 200px; */
 	/* text-align: center; */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+	.card__content {
+		grid-column: 2/-1;
+	}
+
+	.card::before {
+		grid-column: 1/-2;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	:root {
+		--cols: 1fr;
+		--rows: 1fr 1fr;
+	}
+
+	.card__content {
+		grid-column: 1/-1;
+		grid-row: 1/-2;
+	}
+
+	.card::before {
+		grid-column: 1/-1;
+		grid-row: 2/-1;
+		background-position: center;
+		background-size: cover;
+	}
 }
