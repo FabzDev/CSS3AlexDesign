@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 
-* {
+:root {
 	--primary-color: #5050f0;
 	--font: "Inter", sans-serif;
 	--grid-columns: repeat(8, 1fr);
@@ -33,7 +33,7 @@ body {
 	height: 100%;
 	background: var(--primary-color);
 	position: absolute;
-	clip-path: polygon(35% 0%, 100% 0, 100% 100%, 0% 100%);
+	clip-path: var(--clip-path);
 	z-index: -1;
 }
 
@@ -91,20 +91,30 @@ body {
 }
 
 @media screen and (max-width: 780px) {
-	.contact {
-		grid-template-columns: 1fr;
-		grid-template-rows: 300px 3fr;
+	:root {
+		--grid-columns: 1fr;
+		--grid-rows: max-content 1fr;
+		--clip-path: polygon(0 0, 0% 100%, 100% 0);
 	}
 
 	.contact__form {
-		margin-top: 20px;
+		grid-column: 1/-1;
 		grid-row: 2/3;
 		max-width: 500px;
+		padding: 30px 0;
 	}
 
 	.contact__figure {
+		grid-column: 1/-1;
 		grid-row: 1/2;
+		justify-content: center;
+		padding: 30px 0;
 	}
+
+	.contact__img {
+		max-width: 400px;
+	}
+
 	.contact__cta {
 		justify-self: center;
 	}
