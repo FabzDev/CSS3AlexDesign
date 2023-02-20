@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+:root {
+	--primary-color: #2658e4;
+	--font: "Inter", sans-serif;
+}
+
+body {
+	font-family: var(--font);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cards {
+	width: 90%;
+	max-width: 1000px;
+	max-height: 90%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(9, 1fr);
+}
+
+.cards__figure {
+	grid-column: 1/4;
+	grid-row: 2/9;
+}
+
+.cards__img {
+	width: 100%;
+	height: 100%;
+}
+
+.cards__main {
+	grid-column: 3/-1;
+	grid-row: 3/8;
+	background-color: var(--primary-color);
+	color: white;
+	padding: 30px;
+}
+
+.cards__title {
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.cards__paragraph {
+	margin-bottom: 30px;
+}
+
+.cards__cta {
+	display: block;
+	width: 180px;
+	background-color: #fff;
+	padding: 15px 0;
+	color: var(--primary-color);
+	border: none;
+}
