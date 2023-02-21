@@ -12,17 +12,13 @@ body {
 	font-family: var(--font);
 	font-weight: var(--weight);
 	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .cards-container {
 	width: 88%;
-	height: 80%;
 	margin: 50px auto;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 40px;
 }
 
@@ -68,12 +64,16 @@ body {
 
 .text {
 	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .card__paragraph {
 	text-align: start;
 	padding: 0 20px;
 	line-height: 1.2;
+	margin-bottom: auto;
 }
 
 .card__cta {
@@ -85,5 +85,5 @@ body {
 	padding: 15px 30px;
 	border-radius: 5px;
 	margin: 0 auto;
-	margin-top: auto;
+	margin-top: 50px;
 }
