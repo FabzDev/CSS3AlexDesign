@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+:root {
+	--primary-color: rgb(81, 86, 93, 0.1);
+}
+
+* {
+	/* outline: 1px solid red; */
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	background-color: #f5f7fa;
+	color: rgb(81, 86, 93);
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	min-width: 300px;
+	margin: 60px auto;
+	border-radius: 15px;
+	background-color: #fff;
+	box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+.month {
+	text-align: center;
+	padding: 30px 0;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.month__item {
+}
+
+.days,
+.week {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.week {
+	text-align: center;
+	height: 70px;
+	border-top: 1px solid var(--primary-color);
+	border-bottom: 1px solid var(--primary-color);
+}
+
+.week__item {
+	align-self: center;
+}
+
+.day__item {
+	height: 120px;
+	padding: 20px 14px;
+	border-right: 1px solid var(--primary-color);
+	border-bottom: 1px solid var(--primary-color);
+}
