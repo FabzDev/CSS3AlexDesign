@@ -1,46 +1,40 @@
 
-h2{
+h2 {
     color: steelblue;
 }
 
-.borde{
-    border: 1px solid black;
+nav {
+    border: 1px red solid
 }
 
-#section{
-    border: 1px solid black;
+#section {
+    border: 1px blue solid
 }
 
-.titulo{
+.titulo {
     text-align: center;
 }
 
-.😁{
-    color: darkblue;
+.😁 {
+    color: blueviolet;
 }
 
-.😂{
-    border: 1px solid black;
-    font-size: 20px;
-}
-
-[href]{
+[href] {
     text-decoration: none;
 }
 
 [href="https://alexcgdesign.com/inicio"]{
-    color: darkred;
+    color: red; 
 }
 
 [href^="hsttps"]{
-    color: darkolivegreen;
+    color: greenyellow
 }
 
 [href$="org"]{
-    background: steelblue;
-    color: white;
+    background: orangered;   
 }
 
 [href*="alexcgdesign"]{
-    background: darksalmon;
+    background: seagreen;
 }
